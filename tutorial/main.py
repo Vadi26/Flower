@@ -2,6 +2,7 @@ import pickle
 from pathlib import Path
 
 import hydra
+from hydra.utils import instantiate
 from hydra.core.hydra_config import HydraConfig
 from omegaconf import DictConfig, OmegaConf
 
@@ -25,18 +26,20 @@ def main(cfg: DictConfig):
 
     ## 3. Define your clients
     # This function returns a function which is able to instantiate a client of a particular id
-    client_fn = generate_client_fn(trainloaders, validationloaders, cfg.num_classes)
+    client_fn = generate_client_fn(trainloaders, validationloaders, cfg.model)
 
     ## 4. Define your strategy
-    strategy = fl.server.strategy.FedAvg(fraction_fit=0.00001,
-                                         min_fit_clients=cfg.num_clients_per_round_fit,   # How many clients are gonna be used per round for training
-                                         fraction_evaluate=0.00001,
-                                         min_evaluate_clients=cfg.num_clients_per_round_eval,  # How many clients are gonna be used for evaluation
-                                         min_available_clients=cfg.num_clients,
-                                         on_fit_config_fn=get_on_fit_config(cfg.config_fit),   
-                                         evaluate_fn=get_evaluate_fn(cfg.num_classes,
-                                                                     testloader)
-                                         )
+    # strategy = fl.server.strategy.FedAvg(fraction_fit=0.00001,
+    #                                      min_fit_clients=cfg.num_clients_per_round_fit,   # How many clients are gonna be used per round for training
+    #                                      fraction_evaluate=0.00001,
+    #                                      min_evaluate_clients=cfg.num_clients_per_round_eval,  # How many clients are gonna be used for evaluation
+    #                                      min_available_clients=cfg.num_clients,
+    #                                      on_fit_config_fn=get_on_fit_config(cfg.config_fit),   
+    #                                      evaluate_fn=get_evaluate_fn(cfg.num_classes,
+    #                                                                  testloader)
+    #                                      )
+    
+    strategy = instantiate(cfg.strategy, evaluate_fn=get_evaluate_fn(cfg.model,testloader))
 
     ## 5. Start Simulation
     history = fl.simulation.start_simulation(

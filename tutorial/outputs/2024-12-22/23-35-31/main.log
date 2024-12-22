@@ -1,0 +1,28 @@
+[2024-12-22 23:35:31,374][flwr][INFO] - Starting Flower simulation, config: num_rounds=10, no round_timeout
+[2024-12-22 23:35:31,418][filelock][INFO] - Lock 127966408380224 acquired on /tmp/ray/session_2024-12-22_23-35-31_418275_780402/node_ip_address.json.lock
+[2024-12-22 23:35:31,418][filelock][INFO] - Lock 127966408380224 released on /tmp/ray/session_2024-12-22_23-35-31_418275_780402/node_ip_address.json.lock
+[2024-12-22 23:35:31,419][filelock][INFO] - Lock 127966408378832 acquired on /tmp/ray/session_2024-12-22_23-35-31_418275_780402/ports_by_node.json.lock
+[2024-12-22 23:35:31,419][filelock][INFO] - Lock 127966408378832 released on /tmp/ray/session_2024-12-22_23-35-31_418275_780402/ports_by_node.json.lock
+[2024-12-22 23:35:31,419][filelock][INFO] - Lock 127966408379648 acquired on /tmp/ray/session_2024-12-22_23-35-31_418275_780402/ports_by_node.json.lock
+[2024-12-22 23:35:31,419][filelock][INFO] - Lock 127966408379648 released on /tmp/ray/session_2024-12-22_23-35-31_418275_780402/ports_by_node.json.lock
+[2024-12-22 23:35:31,419][filelock][INFO] - Lock 127966408475456 acquired on /tmp/ray/session_2024-12-22_23-35-31_418275_780402/ports_by_node.json.lock
+[2024-12-22 23:35:31,419][filelock][INFO] - Lock 127966408475456 released on /tmp/ray/session_2024-12-22_23-35-31_418275_780402/ports_by_node.json.lock
+[2024-12-22 23:35:31,419][filelock][INFO] - Lock 127966408476368 acquired on /tmp/ray/session_2024-12-22_23-35-31_418275_780402/ports_by_node.json.lock
+[2024-12-22 23:35:31,419][filelock][INFO] - Lock 127966408476368 released on /tmp/ray/session_2024-12-22_23-35-31_418275_780402/ports_by_node.json.lock
+[2024-12-22 23:35:31,419][filelock][INFO] - Lock 127966408475456 acquired on /tmp/ray/session_2024-12-22_23-35-31_418275_780402/ports_by_node.json.lock
+[2024-12-22 23:35:31,420][filelock][INFO] - Lock 127966408475456 released on /tmp/ray/session_2024-12-22_23-35-31_418275_780402/ports_by_node.json.lock
+[2024-12-22 23:35:33,566][flwr][INFO] - Flower VCE: Ray initialized with resources: {'node:__internal_head__': 1.0, 'memory': 5374604084.0, 'object_store_memory': 2687302041.0, 'node:192.168.1.11': 1.0, 'CPU': 12.0}
+[2024-12-22 23:35:33,567][flwr][INFO] - Optimize your simulation with Flower VCE: https://flower.ai/docs/framework/how-to-run-simulations.html
+[2024-12-22 23:35:33,567][flwr][INFO] - Flower VCE: Resources for each Virtual Client: {'num_cpus': 2, 'num_gpus': 0}
+[2024-12-22 23:35:33,579][flwr][INFO] - Flower VCE: Creating VirtualClientEngineActorPool with 6 actors
+[2024-12-22 23:35:33,582][flwr][INFO] - [INIT]
+[2024-12-22 23:35:33,582][flwr][INFO] - Using initial global parameters provided by strategy
+[2024-12-22 23:35:33,582][flwr][INFO] - Starting evaluation of initial global parameters
+[2024-12-22 23:35:35,589][flwr][INFO] - initial parameters (loss, other metrics): 182.2124743461609, {'accuracy': 0.1197}
+[2024-12-22 23:35:35,589][flwr][INFO] - 
+[2024-12-22 23:35:35,589][flwr][INFO] - [ROUND 1]
+[2024-12-22 23:35:35,589][flwr][INFO] - configure_fit: strategy sampled 10 clients (out of 100)
+[2024-12-22 23:35:39,028][flwr][INFO] - aggregate_fit: received 10 results and 0 failures
+[2024-12-22 23:35:39,043][flwr][WARNING] - No fit_metrics_aggregation_fn provided
+[2024-12-22 23:35:40,233][flwr][INFO] - fit progress: (1, 181.5209219455719, {'accuracy': 0.1654}, 4.644334823999088)
+[2024-12-22 23:35:40,233][flwr][INFO] - configure_evaluate: strategy sampled 25 clients (out of 100)
