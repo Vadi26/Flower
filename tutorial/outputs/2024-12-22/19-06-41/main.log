@@ -1,0 +1,17 @@
+[2024-12-22 19:06:41,983][flwr][INFO] - Starting Flower simulation, config: num_rounds=10, no round_timeout
+[2024-12-22 19:06:42,045][filelock][INFO] - Lock 140682510950304 acquired on /tmp/ray/session_2024-12-22_19-06-42_045095_474360/node_ip_address.json.lock
+[2024-12-22 19:06:42,045][filelock][INFO] - Lock 140682510950304 released on /tmp/ray/session_2024-12-22_19-06-42_045095_474360/node_ip_address.json.lock
+[2024-12-22 19:06:42,046][filelock][INFO] - Lock 140682510516768 acquired on /tmp/ray/session_2024-12-22_19-06-42_045095_474360/ports_by_node.json.lock
+[2024-12-22 19:06:42,046][filelock][INFO] - Lock 140682510516768 released on /tmp/ray/session_2024-12-22_19-06-42_045095_474360/ports_by_node.json.lock
+[2024-12-22 19:06:42,046][filelock][INFO] - Lock 140682510518256 acquired on /tmp/ray/session_2024-12-22_19-06-42_045095_474360/ports_by_node.json.lock
+[2024-12-22 19:06:42,046][filelock][INFO] - Lock 140682510518256 released on /tmp/ray/session_2024-12-22_19-06-42_045095_474360/ports_by_node.json.lock
+[2024-12-22 19:06:42,046][filelock][INFO] - Lock 140682510516768 acquired on /tmp/ray/session_2024-12-22_19-06-42_045095_474360/ports_by_node.json.lock
+[2024-12-22 19:06:42,046][filelock][INFO] - Lock 140682510516768 released on /tmp/ray/session_2024-12-22_19-06-42_045095_474360/ports_by_node.json.lock
+[2024-12-22 19:06:42,046][filelock][INFO] - Lock 140682510576992 acquired on /tmp/ray/session_2024-12-22_19-06-42_045095_474360/ports_by_node.json.lock
+[2024-12-22 19:06:42,046][filelock][INFO] - Lock 140682510576992 released on /tmp/ray/session_2024-12-22_19-06-42_045095_474360/ports_by_node.json.lock
+[2024-12-22 19:06:42,046][filelock][INFO] - Lock 140682510575984 acquired on /tmp/ray/session_2024-12-22_19-06-42_045095_474360/ports_by_node.json.lock
+[2024-12-22 19:06:42,047][filelock][INFO] - Lock 140682510575984 released on /tmp/ray/session_2024-12-22_19-06-42_045095_474360/ports_by_node.json.lock
+[2024-12-22 19:06:44,192][flwr][INFO] - Flower VCE: Ray initialized with resources: {'memory': 5821250766.0, 'object_store_memory': 2910625382.0, 'node:__internal_head__': 1.0, 'CPU': 12.0, 'node:192.168.1.11': 1.0}
+[2024-12-22 19:06:44,192][flwr][INFO] - Optimize your simulation with Flower VCE: https://flower.ai/docs/framework/how-to-run-simulations.html
+[2024-12-22 19:06:44,192][flwr][INFO] - Flower VCE: Resources for each Virtual Client: {'num_cpus': 2, 'num_gpus': 0.5}
+[2024-12-22 19:06:44,193][flwr][WARNING] - The ActorPool is empty. The system (CPUs=12.0, GPUs=0) does not meet the criteria to host at least one client with resources: {'num_cpus': 2, 'num_gpus': 0.5}. Lowering these resources could help.
